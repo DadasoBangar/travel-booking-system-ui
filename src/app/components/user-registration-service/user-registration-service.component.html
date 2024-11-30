@@ -1,0 +1,38 @@
+<div class="pageBody">
+
+<div class="registrationDiv">
+   
+<div class="container  col-md-10" style="padding-top: 1px;">
+    <h2>
+        <label for="titileRegister" class="titileRegister">User Registration</label>
+    </h2>
+    <form (ngSubmit)="registerUser()">
+<div class="mb-3">
+    <label for="userName" class="form-label" aria-required="true">userName</label>
+    <input type="userName" [(ngModel)]="userRegistrationDto.userName" class="form-control" id="userName" name="userName" placeholder="userName">
+</div>
+<div class="mb-3">
+    <label for="email" class="form-label">Email</label>
+    <input type="email" [(ngModel)]="userRegistrationDto.email" class="form-control" id="email" name="email" placeholder="email">
+</div>
+
+<div class="mb-3">
+    <label for="mobNo" class="form-label">Mob No</label>
+    <input type="mobNo" [(ngModel)]="userRegistrationDto.mobNo" class="form-control" id="mobNo" name="mobNo" placeholder="mobNo">
+</div>
+<div class="mb-3">
+    <label for="password" class="form-label">Password</label>
+    <input type="password" [(ngModel)]="userRegistrationDto.password" class="form-control" id="password" name="password" placeholder="password">
+</div>
+<div class="mb-3">
+    <label for="confirmPassword" class="form-label">Confirm Password</label>
+    <input type="password" [(ngModel)]="userRegistrationDto.confirmPassword" class="form-control" id="confirmPassword" name="confirmPassword" placeholder="confirmPassword">
+</div>
+<div id="registerDiv">
+    <button type="submit" class="btn btn-register">Create account</button>
+
+</div>
+</form>
+</div>
+</div>
+    </div>

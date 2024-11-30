@@ -1,0 +1,317 @@
+#adultCount{
+    display: flex;
+    height: 40%;
+    border-radius: 2px;
+    background-color: #ebf5fb;
+}
+
+
+#adultCount{
+    width: 57.5%;
+}
+
+#adultAge{
+    margin-bottom: 0%;
+    font-weight: bold;
+}
+
+#adultsCountDiv1{
+     padding-top: 17%;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    font-weight: bold;
+   
+}
+
+
+
+#adultsCountDiv2{
+     padding-top: 17%;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    font-weight: bold;
+   
+}
+#adultsCountDiv3{
+     padding-top: 17%;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    font-weight: bold;
+   
+}
+#adultsCountDiv4{
+     padding-top: 17%;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    font-weight: bold;
+   
+}
+#adultsCountDiv5{
+     padding-top: 17%;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    font-weight: bold;
+   
+}
+#adultsCountDiv6{
+     padding-top: 17%;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    font-weight: bold;
+   
+}
+#adultsCountDiv7{
+     padding-top: 17%;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    font-weight: bold;
+   
+}
+#adultsCountDiv8{
+     padding-top: 17%;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    font-weight: bold;
+   
+}
+#adultsCountDiv9{
+     padding-top: 17%;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    font-weight: bold;
+   
+}
+#adultsCountDiv10{
+     padding-top: 17%;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 75px solid;
+    font-weight: bold;
+   
+}
+#adultsCountDiv11{
+    padding-top: 17%;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    font-weight: bold;
+   
+}
+
+#adultsCountDiv1:hover{
+    padding-top: 22%;
+    background-color:#2E1A66 ;
+    color: white;
+    border-radius: 10px;
+    font-size: 24px;
+}
+#adultsCountDiv2:hover{
+    padding-top: 22%;
+    background-color:#2E1A66 ;
+    color: white;
+    border-radius: 10px;
+    font-size: 24px;
+}
+#adultsCountDiv3:hover{
+    padding-top: 22%;
+    background-color:#2E1A66 ;
+    color: white;
+    border-radius: 10px;
+    font-size: 24px;
+}
+#adultsCountDiv4:hover{
+    padding-top: 22%;
+    background-color:#2E1A66 ;
+    color: white;
+    border-radius: 10px;
+    font-size: 24px;
+}
+#adultsCountDiv5:hover{
+    padding-top: 22%;
+    background-color:#2E1A66 ;
+    color: white;
+    border-radius: 10px;
+    font-size: 24px;
+}
+#adultsCountDiv6:hover{
+    padding-top: 22%;
+    background-color:#2E1A66 ;
+    color: white;
+    border-radius: 10px;
+    font-size: 24px;
+}
+#adultsCountDiv7:hover{
+    padding-top: 22%;
+    background-color:#2E1A66 ;
+    color: white;
+    border-radius: 10px;
+    font-size: 24px;
+}
+#adultsCountDiv8:hover{
+    padding-top: 22%;
+    background-color:#2E1A66 ;
+    color: white;
+    border-radius: 10px;
+    font-size: 24px;
+}
+#adultsCountDiv9:hover{
+    padding-top: 22%;
+    background-color:#2E1A66 ;
+    color: white;
+    border-radius: 10px;
+    font-size: 24px;
+}
+#adultsCountDiv10:hover{
+    padding-top: 22%;
+    background-color:#2E1A66 ;
+    color: white;
+    border-radius: 10px;
+    font-size: 24px;
+}
+
+/*children details*/
+
+#childAge{
+    margin-bottom: 0%;
+    font-weight: bold;
+}
+#childCount{
+    display: flex;
+    height: 40%;
+    border-radius: 2px;
+    background-color: #ebf5fb;
+    width: 40%;
+}
+#childrenDiv{
+    padding-top: 5%;
+}
+
+#childCountsDiv0{
+    padding-top: 17%;
+   text-align: center;
+   width: 40px;
+   height: 40px;
+   font-weight: bold;
+  
+}
+
+#childCountsDiv1{
+    padding-top: 17%;
+   text-align: center;
+   width: 40px;
+   height: 40px;
+   font-weight: bold;
+  
+}
+
+#childCountsDiv2{
+    padding-top: 17%;
+   text-align: center;
+   width: 40px;
+   height: 40px;
+   font-weight: bold;
+  
+}
+#childCountsDiv3{
+    padding-top: 17%;
+   text-align: center;
+   width: 40px;
+   height: 40px;
+   font-weight: bold;
+  
+}
+#childCountsDiv4{
+    padding-top: 17%;
+   text-align: center;
+   width: 40px;
+   height: 40px;
+   font-weight: bold;
+  
+}
+#childCountsDiv5{
+    padding-top: 17%;
+   text-align: center;
+   width: 40px;
+   height: 40px;
+   font-weight: bold;
+  
+}
+#childCountsDiv6{
+    padding-top: 17%;
+   text-align: center;
+   width: 40px;
+   height: 40px;
+   font-weight: bold;
+  
+}
+
+#childCountsDiv0:hover{
+    padding-top: 22%;
+    background-color:#2E1A66 ;
+    color: white;
+    border-radius: 10px;
+    font-size: 24px;
+}
+
+#childCountsDiv1:hover{
+    padding-top: 22%;
+    background-color:#2E1A66 ;
+    color: white;
+    border-radius: 10px;
+    font-size: 24px;
+}
+#childCountsDiv2:hover{
+    padding-top: 22%;
+    background-color:#2E1A66 ;
+    color: white;
+    border-radius: 10px;
+    font-size: 24px;
+}
+#childCountsDiv3:hover{
+    padding-top: 22%;
+    background-color:#2E1A66 ;
+    color: white;
+    border-radius: 10px;
+    font-size: 24px;
+}
+#childCountsDiv4:hover{
+    padding-top: 22%;
+    background-color:#2E1A66 ;
+    color: white;
+    border-radius: 10px;
+    font-size: 24px;
+}
+#childCountsDiv5:hover{
+    padding-top: 22%;
+    background-color:#2E1A66 ;
+    color: white;
+    border-radius: 10px;
+    font-size: 24px;
+}
+#childCountsDiv6:hover{
+    padding-top: 22%;
+    background-color:#2E1A66 ;
+    color: white;
+    border-radius: 10px;
+    font-size: 24px;
+}
+/*children details end*/
+
+
+/*traveller class starts*/
+
+#travellerClass{
+    padding-top: 6%;
+
+}
+/*traveller class ends*/

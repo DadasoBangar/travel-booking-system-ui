@@ -1,0 +1,71 @@
+<div class="pageBody">
+
+    
+
+    <div class="registrationDiv">
+       
+    <div class="container  col-md-10" style="padding-top: 1px;">
+        <h2>
+            <label for="titileRegister" class="titileRegister">Flight details</label>
+        </h2>
+        <form (ngSubmit)="addFlightDetails()">
+    <div class="mb-3">
+        <label for="journeyType" class="form-label" aria-required="true">JourneyType:</label>
+        <input type="journeyType" [(ngModel)]="flightDto.journeyType" class="form-control" id="journeyType" name="journeyType" placeholder="journeyType">
+    </div>
+    <div class="mb-3">
+        <label for="airLineName" class="form-label">AirLineName:</label>
+        <input type="airLineName" [(ngModel)]="flightDto.airLineName" class="form-control" id="airLineName" name="airLineName" placeholder="airLineName">
+    </div>
+
+    <div class="mb-3">
+        <label for="airlineImage" class="form-label">Airline Image:</label>
+        <input type="airlineImage" [(ngModel)]="flightDto.image" class="form-control" id="airlineImage" name="airlineImage" placeholder="airlineImage">
+    </div>
+    
+    <div class="mb-3">
+        <label for="flightNumber" class="form-label">Flight number:</label>
+        <input type="flightNumber" [(ngModel)]="flightDto.flightNumber" class="form-control" id="flightNumber" name="flightNumber" placeholder="flightNumber">
+    </div>
+    <div class="mb-3">
+        <label for="fromLocation" class="form-label">FromLocation:</label>
+        <input type="fromLocation" [(ngModel)]="flightDto.fromLocation" class="form-control" id="fromLocation" name="fromLocation" placeholder="fromLocation">
+    </div>
+
+    <div class="mb-3">
+        <label for="toLocation" class="form-label" aria-required="true">ToLocation:</label>
+        <input type="toLocation" [(ngModel)]="flightDto.toLocation" class="form-control" id="toLocation" name="toLocation" placeholder="toLocation">
+    </div>
+
+    <div class="mb-3">
+        <label for="departureDate" class="form-label" aria-required="true">DepartureDate:</label>
+        <input type="departureDate" [(ngModel)]="flightDto.departureDate" class="form-control" id="departureDate" name="departureDate" placeholder="departureDate">
+    </div>
+
+    <div class="mb-3">
+        <label for="returnDate" class="form-label" aria-required="true">ReturnDate:</label>
+        <input type="returnDate" [(ngModel)]="flightDto.returnDate" class="form-control" id="returnDate" name="returnDate" placeholder="returnDate">
+    </div>
+    <div class="mb-3">
+        <label for="fareType" class="form-label" aria-required="true">FareType:</label>
+        <input type="fareType" [(ngModel)]="flightDto.fareType" class="form-control" id="fareType" name="fareType" placeholder="fareType">
+    </div>
+
+    <div class="mb-3">
+        <label for="fareClassType" class="form-label" aria-required="true">FareClassType:</label>
+        <input type="fareClassType" [(ngModel)]="flightDto.fareClassType" class="form-control" id="fareClassType" name="fareClassType" placeholder="fareClassType">
+    </div>
+
+    <div class="mb-3">
+        <label for="price" class="form-label" aria-required="true">Airline Price:</label>
+        <input type="price" [(ngModel)]="flightDto.price" class="form-control" id="price" name="price" placeholder="price">
+    </div>
+
+    <div id="registerDiv">
+        <button type="submit" class="btn btn-register">Save flight details</button>
+    
+    </div>
+    </form>
+    </div>
+    </div>
+        </div>

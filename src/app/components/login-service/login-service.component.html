@@ -1,0 +1,34 @@
+<html style="background-color: #01153e;">
+    <body id="pageBody">
+
+        <form (ngSubmit)="getLogin()" id="loginForm">
+<div class="LoginDiv">
+   
+    <div class="container  col-md-10" id="loginDetails">
+        <h2>
+            <label for="titileLogin" class="titileLogin">User Login</label>
+        </h2>
+        
+    <div class="mb-3">
+        <label for="userName" class="form-label" aria-required="true">userName</label>
+        <input type="userName" [(ngModel)]="userLoginDto.userName" class="form-control" id="userName" name="userName" placeholder="userName">
+    </div>
+    <div class="mb-3">
+        <label for="password" class="form-label">Password</label>
+        <input type="password" [(ngModel)]="userLoginDto.password" class="form-control" id="password" name="password" placeholder="password">
+    </div>
+    <div>
+        <button type="submit" class="btn btn-login">Sign In</button>
+    
+    </div>
+<div class="forgotPasswordDiv">
+  <h5>  <a [routerLink]="['/resetPassword']" class="forgotPassword" >Forgot password?</a></h5>
+
+</div>
+    
+    </div>
+    </div>
+</form>
+</body>
+</html>
+      

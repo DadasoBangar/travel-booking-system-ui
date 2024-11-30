@@ -1,0 +1,326 @@
+<html style="background-color: #87CEEB;">
+
+<body id="pageBody">
+    <form>
+
+
+        <div class="container" id="mainDiv">
+            <div id="searchHeader">
+                <div id="airLineMenu">
+                    <div id="airLineMenuImg">
+                        <img src="asset/images/Plane.png" width="70px" height="70px" (click)="searchFlight()">
+                   </div>
+
+                    <div id="airLineMenuLbl">
+
+                        <label for="airlineName" id="airLineName" (click)="searchFlight()">Flight</label>
+                    </div>
+                </div>
+
+                <div id="carMenu">
+                    <div id="carMenuImg">
+                        <img src="asset/images/Car.png" width="115px" height="90px" (click)="searchCar()">
+                       
+                    </div>
+
+                    <div id="carMenuLbl">
+                      <label for="carName" id="carName" (click)="searchCar()">Car</label>
+                     </div>
+                </div>
+
+
+                <div id="hotelMenu">
+
+                    <div id="hotelMenuImg">
+                       <img src="asset/images/Hotel.png" width="75px" height="75px" (click)="searchHotel()">
+                     </div>
+
+                    <div id="hotelMenuLbl">
+                       <label for="hotelName" id="hotelName" (click)="searchHotel()">Hotel</label>
+                    
+                    </div>
+
+
+
+
+                </div>
+            </div>
+            <div id="searchRequest">
+                <div id="fligtSearchRequest">
+                  
+                    <form (ngSubmit)="searchFlight()">
+                        <div class="mb-3" id="journeyType">
+                            <mat-radio-group [(ngModel)]="flightSearchDto.journeyType" name="journeyType" [ngModelOptions]="{standalone: false}">
+                            
+                                <mat-radio-button value="One Way">One Way</mat-radio-button>
+                                <mat-radio-button value="Return">Returns</mat-radio-button>
+                                <mat-radio-button value="Multicity">Multicity</mat-radio-button>
+                              </mat-radio-group>
+
+                        </div>
+                        <div id="locationsDiv">
+                        <div class="mb-3" id="fromLocationsDiv" (click)="searchFromLocation();">
+
+                            <div id="fromsearchMainDiv">
+                                <div id="fromLocations">
+                                    <p>From</p>
+                                </div>
+                                <div id="fromCity">
+                                    <h4>
+                                        Mumbai
+                                    </h4>
+                                </div>
+                                <div id="iataAirpotName">
+                                    <p>
+                                        BOM,Chatrapati Maharaj Terminal
+                                    </p>
+                                </div>
+
+                            </div>
+                            <div class="search-wrapper" id="fromLocationDiv" style="display: none;">
+
+                                
+                                <!--<ion-searchbar placeholder="Custom Placeholder"></ion-searchbar>-->
+                                <div id="fromSearchIcon" style="display: none;">
+                                    <span class="material-icons" (input)="getFlightAirportsDetails($event,'fromLocation')">search</span>
+                                </div>
+                               
+                                <div id="fromLocationInputDiv">
+                                    <input id="fromLocationInput"  class="no-outline" type="text"  (input)="getFlightAirportsDetails($event,'fromLocation')" placeholder="FromLocation">
+
+                                </div>
+                                
+                              </div>
+                           <!-- <div *ngFor="let fromLocations of flightAirportsDto">-->
+                             <div id="searchFromLocations">
+                                <div id="searchFromLocationsList">
+                                   
+
+                                    <div id="fromIataCode">
+
+                                        <mat-form-field id="matFromDiv">
+                                            <mat-label>FromLocation</mat-label>
+                                            <mat-select [formControl]="pokemonControl" (selectionChange)="disableFromLocationDiv($event.value)">
+                                              @for (fromLocations of flightAirportsDto; track fromLocations) {
+                                                <mat-optgroup [disabled]="false">
+                                                  
+                                                    <mat-option [value]="fromLocations.cityName">
+                                                        <div id="fromLocationListDiv" >
+
+                                                        
+                                                        <div id="airLineIcon">
+                                                            <img src="asset/images/Plane.png" width="20px" height="20px">
+                    
+                                                          
+                                                        </div>
+                                                        <div id="fromLocationsAirportName">
+                                                            <p id="fromLocationsAirport">{{fromLocations.cityName}},{{fromLocations.country}}</p>
+                                                            <p id="fromLocationsAirport">{{fromLocations.airportName}}</p>
+                                                        </div>
+                                                        <div id="iataCodeDiv">
+                                                            {{fromLocations.iata}}
+                                                        </div>
+                                                    </div>
+                                                        
+                                                    </mat-option>
+                                                  
+                                                </mat-optgroup>
+                                              }
+                                            </mat-select>
+                                          </mat-form-field>
+                                          
+                                       
+                                    </div>
+                                        
+                                      
+                                </div>
+                                
+                             
+                                
+                            </div>
+                            
+                            <!--<label for="fromLocation" class="form-label">FromLocation:</label>
+                            <input type="fromLocation" [(ngModel)]="flightDto.fromLocation" class="form-control" id="fromLocation" name="fromLocation" placeholder="fromLocation">
+                            --> </div>
+                    
+                            <div class="mb-3" id="toLocationsDiv" (click)="searchToLocation();">
+
+                                <div id="tosearchMainDiv">
+                                    <div id="toLocations">
+                                        <p>To</p>
+                                    </div>
+                                    <div id="toCity">
+                                        <h4>
+                                            Delhi
+                                        </h4>
+                                    </div>
+                                    <div id="toIataAirpotName">
+                                        <p>
+                                            DEL,Rajiv Gandhi Airport
+                                        </p>
+                                    </div>
+    
+                                </div>
+                                <div class="search-wrapper" id="toLocationDiv" style="display:none">
+    
+                                    
+                                    <!--<ion-searchbar placeholder="Custom Placeholder"></ion-searchbar>-->
+                                    <div id="toSearchIcon">
+                                        <span class="material-icons" (input)="getFlightAirportsDetails($event,'toLocation')">search</span>
+                                    </div>
+                                   
+                                    <div id="toLocationInputDiv">
+                                        <input id="toLocationInput" type="text" (input)="getFlightAirportsDetails($event,'toLocation')" placeholder="ToLocation">
+                                    </div>
+                                    
+                                  </div>
+                                <!--<div *ngFor="let toLocations of flightAirportsDto">-->
+                                 <div id="searchToLocations">
+                                    <div id="searchToLocationsList">
+                                        
+                                        <div id="iataCode">
+
+
+                                          
+                                            <mat-form-field id="matToDiv">
+                                                <mat-label>toLocation</mat-label>
+                                                <mat-select [formControl]="pokemonControl" (selectionChange)="disableToLocationDiv($event.value)">
+                                                  @for (toLocations of flightAirportsDto; track toLocations) {
+                                                    <mat-optgroup [disabled]="false">
+                                                      
+                                                        <mat-option [value]="toLocations.cityName">
+                                                            <div id="toLocationListDiv">
+
+                                                            
+                                                            <div id="airLineIcon">
+                                                                <img src="asset/images/Plane.png" width="20px" height="20px">
+                        
+                                                              
+                                                            </div>
+                                                            <div id="toLocationsAirportName">
+                                                                <p id="toLocationsAirport">{{toLocations.cityName}},{{toLocations.country}}</p>
+                                                                <p id="toLocationsAirport">{{toLocations.airportName}}</p>
+                                                            </div>
+                                                            <div id="iataCodeFiv">
+                                                                {{toLocations.iata}}
+                                                            </div>
+                                                        </div>
+                                                            
+                                                        </mat-option>
+                                                      
+                                                    </mat-optgroup>
+                                                  }
+                                                </mat-select>
+                                              </mat-form-field>
+                                              
+                                           
+                                        </div>
+                                            
+                                          
+                                    </div>
+                                    
+                                 </div>
+                                    
+                                
+                                
+                                <!--<label for="fromLocation" class="form-label">FromLocation:</label>
+                                <input type="fromLocation" [(ngModel)]="flightDto.fromLocation" class="form-control" id="fromLocation" name="fromLocation" placeholder="fromLocation">
+                                --> </div>
+
+                              <!-- <div id="departureDateDiv">
+                                    <mat-form-field class="example-full-width" id="matFromDate">
+                                        <mat-label>Departure</mat-label>
+                                        <input matInput [matDatepickerFilter]="fromLocationFilter" [matDatepicker]="picker" [(ngModel)]="flightSearchDto.departureDate" [ngModelOptions]="{standalone: false}">
+                                        <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+                                        <mat-datepicker #picker></mat-datepicker>
+                                      </mat-form-field>
+                                      
+                                      
+                                </div>-->
+
+                                <div id="departureDateDiv">
+                                    <mat-form-field class="example-full-width" id="matFromDate">
+                                      <mat-label>Departure</mat-label>
+                                      <input matInput 
+                                             [matDatepickerFilter]="fromLocationFilter" 
+                                             [matDatepicker]="fromDatePicker" 
+                                             [(ngModel)]="flightSearchDto.departureDate" 
+                                             name="departureDate" 
+                                             [ngModelOptions]="{standalone: false}">
+                                      <mat-datepicker-toggle matIconSuffix [for]="fromDatePicker"></mat-datepicker-toggle>
+                                      <mat-datepicker #fromDatePicker></mat-datepicker>
+                                    </mat-form-field>
+                                  </div>
+                                <div id="returnDateDiv">
+                                    <mat-form-field class="example-full-width" id="matReturnDate">
+                                      <mat-label>Return</mat-label>
+                                      <input matInput 
+                                             [matDatepickerFilter]="toLocationFilter" 
+                                             [matDatepicker]="toDatePicker" 
+                                             [(ngModel)]="flightSearchDto.returnDate" 
+                                             name="returnDate" 
+                                             [ngModelOptions]="{standalone: false}">
+                                      <mat-datepicker-toggle matIconSuffix [for]="toDatePicker"></mat-datepicker-toggle>
+                                      <mat-datepicker #toDatePicker></mat-datepicker>
+                                    </mat-form-field>
+                                  </div>
+                                  
+
+                                <div id="travellerDiv" (click)="displayTravellerDetails()">
+                                    <p>Travellers & Class</p>
+                                      
+                                </div>
+                        
+                            </div>
+                           <div id="specialFareDetails">
+                            
+                            <div id="specialFareInfo">
+                              <p>FARE TYPE</p>
+                            </div>
+                            <div>
+                                <mat-radio-group [(ngModel)]="flightSearchDto.fareType" name="fareType" [ngModelOptions]="{standalone: false}" >
+                                    <div id="fareDetails">
+                                        <div id="regularFare">
+                                            <mat-radio-button value="Regular Fare">Regular Fare</mat-radio-button>
+                                        </div>
+                                        <div id="studentFare">
+                                            <mat-radio-button value="Student Fare">Student Fare</mat-radio-button>
+                                        </div>
+                                    </div>
+                                    
+                                   
+                                   
+                                   
+                                  </mat-radio-group>
+
+                                 
+                            </div>
+                               
+
+                              </div>
+
+                     
+                    
+                        <div id="searchDiv">
+                            <button type="submit" class="searchBtn">Search Flights</button>
+                        
+                        </div>
+                        </form>
+                    
+                </div>
+                <div id="carSearchRequest">
+                    <h1>Car</h1>
+                </div>
+                <div id="hotelSearchRequest">
+                    <h1>Hotel</h1>
+                </div>
+
+            </div>
+
+
+
+        </div>
+    </form>
+</body>
+
+</html>

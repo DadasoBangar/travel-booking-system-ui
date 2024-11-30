@@ -1,0 +1,70 @@
+<html>
+    <body id="pageBody">
+
+    
+<div id="searchResult">
+    <div id="filterDetails">
+        <h1>Filter Details</h1>
+    </div>
+   
+  <div id="oneWaySearchResult">
+     <h1>One Way</h1>
+     <div *ngFor="let searchResult of flightSearchResult">
+      <div id="flightSearchResult1">
+        <div class="searchResultDetails">
+          <div id="imageInfo">
+            <img src="{{''+searchResult.image}}" width="100px" height="80px">
+           </div>
+           <div id="airLineNameDetails">
+            <div id="airLineName">
+              <label for="airLineName">{{searchResult.airLineName}}</label>
+            </div>
+            
+               <div id="flightNumber">
+                <label for="flightNumber">{{searchResult.flightNumber}}</label>
+               </div>
+               </div>
+               <div id="fromLocation">
+                <label for="fromLocation">{{searchResult.fromLocation}}</label>
+               </div>
+               <div id="legDuration">
+                 <div id="totalLegDuration">
+                  <label for="totalLegDuration" >02h 20m</label>
+                  </div>
+                  <div id="nonStopOrNot">
+                  <label for="nonStopOrNot">Non Stop</label>
+                  </div>
+               </div>
+              
+               <div id="toLocation">
+                <label for="toLocation">{{searchResult.toLocation}}</label>
+               </div>
+               <div id="priceDetails">
+                <div id="price">
+                  <label for="price">{{searchResult.price}}</label>
+                </div>
+                <div id="perPerson">
+                  <label for="perPerson">{{"Per Person"}}</label>
+                </div>
+               
+               </div>
+               <div id="viewPriceDetails">
+                <button type="submit" class="searchBtn" (click)="viewPriceDetails()">VIEW PRICE DETAILS</button>
+    
+    
+              </div>
+           
+        </div>
+
+      </div>
+      
+     </div>
+  </div>
+  <div id="returnSearchResult" style="display: none;">
+     <h1>Return</h1>
+  </div>
+</div>
+
+</body>
+
+</html>

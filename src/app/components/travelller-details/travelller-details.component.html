@@ -1,0 +1,81 @@
+<h2 mat-dialog-title>Select travellers count</h2>
+<mat-dialog-content>
+    <div id="displayTravellerDetails">
+        <div id="adultsDiv">
+            <div id="adultsDetails">
+                <div>
+                    <p id="adultAge">ADULTS(12+years)</p>
+                </div>
+                <div>
+                    <p id="adultWay">on the day of travel</p>
+                </div>
+
+            </div>
+            <div id="adultCount">
+                <div *ngFor="let adultCounts of adultsList" id="adultCountValue">
+                    <div id="adultsCountDiv{{adultCounts}}">
+                        {{adultCounts}}
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div id="childrenDiv">
+            <div id="childrenDetails">
+                <div>
+                    <p id="childAge">CHILDREN(In between 2years-12years)</p>
+                </div>
+                <div>
+                    <p id="childWay">on the day of travel</p>
+                </div>
+
+            </div>
+            <div id="childCount">
+                <div *ngFor="let childCounts of childrenList" id="adultCountValue">
+                    <div id="childCountsDiv{{childCounts}}">
+                        {{childCounts}}
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div id="childrenDiv">
+            <div id="childrenDetails">
+                <div>
+                    <p id="childAge">INFANTS(below 2 years)</p>
+                </div>
+                <div>
+                    <p id="childWay">on the day of travel</p>
+                </div>
+
+            </div>
+            <div id="childCount">
+                <div *ngFor="let childCounts of childrenList" id="adultCountValue">
+                    <div id="childCountsDiv{{childCounts}}">
+                        {{childCounts}}
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div id="travellerClass">
+            <h6>CHOOSE TRAVEL CLASS</h6>
+            <mat-form-field>
+                <mat-label>SELECT TRAVELLER CLASS</mat-label>
+                <mat-select>
+                    @for (traveller of travellerClassDetails; track traveller) {
+                    <mat-option [value]="traveller">{{traveller}}</mat-option>
+                    }
+                </mat-select>
+            </mat-form-field>
+
+
+
+        </div>
+    </div>
+</mat-dialog-content>
+<mat-dialog-actions>
+    <button mat-button mat-dialog-close>Close</button>
+</mat-dialog-actions>

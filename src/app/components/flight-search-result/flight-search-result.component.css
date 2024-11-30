@@ -1,0 +1,104 @@
+#pageBody{
+    background-color: #01153e;
+    height: 2000px;
+}
+
+#searchResult{
+padding-top: 3%;
+display: flex;
+   
+}
+
+#oneWaySearchResult{
+    background-color: white;
+    width: 65%;
+    margin-left: 2%;
+    height: 200px;
+    
+   
+}
+
+#returnSearchResult{
+    background-color: yellow;
+    width: 60%;
+    margin-right: 20%;
+   
+}
+
+#filterDetails{
+    background-color: white;
+    margin-left: 2%;
+    height: 600px;
+    border-radius: 10px;
+    
+}
+
+#flightDetails{
+    display: flex;
+}
+#airLineNameDetails{
+    margin-left: 1%;
+}
+#airLineName{
+    font-weight: bold;
+}
+#fromLocation{
+    font-weight: bold;
+    margin-left: 8%;
+}
+#legDuration{
+    margin-left: 8%;
+}
+#toLocation{
+    margin-left: 8%;
+    font-weight: bold;
+}
+#priceDetails{
+    margin-left: 8%; 
+}
+#viewPriceDetails{
+    margin-left: 5%; 
+    width: 100%;
+    margin-right: 0.5%;
+}
+
+.searchBtn{
+   width: 100%;
+   
+    background-color: #2E1A66;
+    color: white;
+    
+   
+    border-radius: 15px;
+  
+  }
+
+  #flightSearchResult1{
+    height: 200px;
+    background-color: white;
+    width: 100%;
+    margin-top: 1%;
+
+  }
+  .searchResultDetails{
+    padding-top: 3%;
+    display: flex;
+    background-color: white;
+    
+  }
+  #imageInfo{
+    margin-left: 1.5%;
+  }
+
+  
+  #totalLegDuration{
+    width: 77px;
+
+  }
+
+  #price{
+    font-weight: bold;
+    width: 78px;
+   
+  }
+ 

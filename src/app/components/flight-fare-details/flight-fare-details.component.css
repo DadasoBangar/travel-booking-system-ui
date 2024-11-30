@@ -1,0 +1,87 @@
+#pageBody{
+    background-color: #01153e;
+}
+#bookingDetails{
+    display: flex;
+    
+}
+
+#bookingInfo{
+    width: 70%;
+    margin-left: 3%;
+    margin-top: 3%;
+    background-color: white;
+   
+
+}
+
+#fareSummary{
+    width: 30%;
+    margin-left: 1%;
+    margin-top: 3%;
+    margin-right: 3%;
+    background-color: white;
+   
+
+}
+#journeyLocation{
+    background-color: white;
+    color: #01153e;
+    padding-top: 0.5%;
+    padding-left: 1%;
+}
+#fareDetails{
+    display: flex;
+    padding-top: 3%;
+}
+#bookingDates{
+    background-color: white;
+    color: #01153e;
+    padding-left: 2%;
+}
+#duration{
+    background-color: white;
+    color: #01153e;
+    padding-left: 2%;
+}
+#fareRule{
+    padding-left: 50%;
+}
+#fareCancellationtBtn{
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+   
+    cursor: pointer;
+    background-color: #2E1A66;
+    border: 2px solid;
+    border-radius: 25px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    width: 115%;
+    
+   
+}
+
+#flightDetails{
+    display: flex;
+}
+#imageDetails{
+    color: #01153e;
+}
+#flightNames{
+    color: #01153e;
+    padding-left: 0.1%;
+    padding-top: 2%;
+}
+
+#flightNumbers{
+    padding-left: 5%;
+    padding-top: 2%;
+}
+#fareClassType{
+    padding-left: 10%;
+    padding-top: 2%;
+}

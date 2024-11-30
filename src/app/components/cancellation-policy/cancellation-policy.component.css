@@ -1,0 +1,111 @@
+#titleClose{
+    width: 100%;
+    height: 60px;
+    font-size: 16px;
+    background-color: #2E1A66;
+}
+#titleSize{
+    margin-left: 95%;
+    font-size: 16pxx;
+    color: white;
+}
+
+.popupTitleClose{
+    cursor: pointer;
+    background-color:#2E1A66;
+    color: white!important;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    font-weight: bold;
+    font-size: 28px;
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-top-width: 0px;
+}
+
+#policyTitle{
+    margin-left: 2%;
+    padding-top: 2%;
+}
+#fareRuleTitle{
+    color: #2E1A66;
+}
+#cancellationPolicyBtn{
+    display: flex;
+    margin-left: 6%;
+    margin-right: 7%;
+    padding-top: 3%;
+
+}
+#cancellationCharges{
+    width: 50%;
+    padding-right: 1%;
+}
+#cancellationChargesBtn{
+    width: 100%;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    cursor: pointer;
+    border: 2px solid;
+    border-radius: 10px;
+    height: 60px;
+    padding-left: 20px;
+    background-color: #2E1A66;
+    color: white;
+}
+#dateChangeCharges{
+    width: 50%;
+}
+#dateChangeChargesBtn{
+    width: 100%;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    cursor: pointer;
+    border: 2px solid;
+    border-radius: 10px;
+    height: 60px;
+    padding-left: 20px;
+    background-color:white;
+   
+}
+
+table {
+    width: 10%;
+  }
+
+  .mat-table-bordered {
+    border: 1px solid #ccc; /* Border around the table */
+    border-collapse: collapse; /* Merge borders for a cleaner look */
+  }
+  
+  .mat-table-bordered th,
+  .mat-table-bordered td {
+    border: 1px solid #ccc; /* Border for table cells */
+    padding: 8px; /* Adjust padding for spacing */
+    text-align: left; /* Align text */
+  }
+  
+  .mat-table-bordered th {
+    background-color: #ebf5fb; /* Optional: Header background color */
+  }
+
+  #cancellationChargesTableData{
+    padding-left: 6.5%;
+    padding-right: 5%;
+  }
+  #dateChangeChargesTableData{
+    padding-left: 1.2%;
+    padding-right: 0.2%;
+
+  }
+
+  #dateChangeChargesDiv{
+    display: none;
+    
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  

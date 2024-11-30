@@ -1,0 +1,370 @@
+#pageBody {
+
+  background-color: #01153e;
+  height: 100%;
+}
+
+#mainDiv {
+  padding-top: 5%;
+}
+
+#searchHeader {
+  text-align: center;
+  display: flex;
+  background-color: white;
+  margin-left: 20%;
+  margin-right: 20%;
+  border: 1px solid;
+  border-color: #2E1A66;
+  border-radius: 20px;
+ 
+
+}
+
+#searchRequest {
+  background-color: white;
+  border-radius: 20px;
+  
+}
+
+.searchBtn{
+  width: 97.5%;
+  margin-right: 2.5%;
+  background-color: #2E1A66;
+  color: white;
+  font-size: 28px;
+  
+  margin-bottom: 3%;
+  margin-top: 6%;
+  border-radius: 25px;
+
+}
+
+
+#airLineMenu {
+  margin-left: 10%;
+  margin-right: 6%;
+  margin-top: 3%;
+  margin-bottom: 2%;
+  padding-left: 15%;
+}
+
+#hotelMenu {
+  margin-top: 2%;
+  margin-bottom: 2%;
+  margin-left: 6%;
+  margin-right: 6%;
+
+}
+
+#carMenuImg {
+  margin-top: 7%;
+}
+
+#airLineMenuLbl {
+  padding-top: 10%;
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 30%;
+  color: #2E1A66;
+}
+
+#carMenuLbl {
+  font-size: 18px;
+  font-weight: bold;
+  color: #2E1A66;
+}
+
+#hotelMenuLbl {
+  font-size: 18px;
+  font-weight: bold;
+  padding-top: 10%;
+  color: #2E1A66;
+}
+
+#carSearchRequest {
+  display: none;
+}
+
+#hotelSearchRequest {
+  display: none;
+}
+
+#fligtSearchRequest {
+  margin-left: 2%;
+  
+}
+
+#journeyType {
+  padding-top: 2%;
+}
+
+.search-hero {
+  max-width: 500px;
+  padding-bottom: 50px;
+  margin: auto;
+}
+
+
+#fromLocationDiv {
+  display: flex;
+  
+ 
+  border: 3px solid;
+
+  border-color: #2E1A66;
+  
+
+}
+
+
+#searchFromLocations {
+  background-color: #ebf5fb;
+}
+
+#toLocationDiv {
+  display: flex;
+ 
+  border: 3px solid;
+
+  border-color: #2E1A66;
+  
+}
+
+#searchToLocations {
+  
+  background-color: #ebf5fb;
+}
+
+#fromLocationsDiv {
+  
+  width: 25%;
+  
+  background-color: #ebf5fb;
+  border-radius: 15px;
+  color: #2E1A66;
+  
+ 
+ 
+}
+
+
+#fromLocationInput {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 100%;
+
+}
+
+#toLocationInput {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 100%;
+}
+
+#fromSearchIcon {
+  margin-top: 3%;
+  margin-left: 3%;
+}
+
+#toSearchIcon {
+  margin-top: 3%;
+  margin-left: 3%;
+}
+
+#fromLocationInputDiv {
+  
+  width: 100%;
+}
+
+#searchFromLocationsList {
+  display: flex;
+}
+
+#airportName {
+
+  padding-left: 10%;
+}
+
+
+#toLocationsAirportName {
+  padding-top: 2%;
+  padding-left: 5%;
+  width: 100%;
+
+}
+
+#toLocationsAirport {
+  width: 12rem;
+}
+
+
+#locationsDiv {
+  width: 100%;
+  display: flex;
+}
+
+#toLocationDiv {
+  display: flex;
+}
+
+#toLocationsDiv {
+  padding-top: 1%;
+  margin-left: 0.5%;
+  padding-left: 2%;
+  width: 25%;
+  background-color: #ebf5fb;
+  border-radius: 15px;
+}
+
+#iataCode {
+  width: 100%;
+}
+
+#fromIataCode {
+  width: 100%;
+}
+
+#toLocationListDiv {
+  display: flex;
+}
+
+.mat-mdc-option {
+  padding-left: 3% !important;
+
+ 
+}
+
+#toLocationInputDiv {
+  width: 180%;
+}
+
+#matFormDiv {
+  width: 100%;
+}
+
+#mat-optgroup-label{
+  min-height:20px;
+}
+
+
+input[type="text"] {
+  border: none;
+  outline: none;
+}
+
+#fromLocationListDiv {
+  display: flex;
+}
+
+#fromLocationsAirportName {
+  padding-left: 5%;
+  width: 65%;
+}
+
+
+
+#fromLocationsAirport {
+  width: 15rem;
+}
+
+#matFromDiv{
+  display: none;
+}
+
+#matToDiv{
+  display: none;
+}
+
+#matSelectedValue{
+  font-weight: bold;
+}
+
+#fromsearchMainDiv{
+  padding-top: 3%;
+  padding-left: 5%;
+}
+
+#departureDateDiv{
+  margin-left: 0.5%;
+  width: 15%;
+  height: 131px;
+  background-color: #ebf5fb;
+  border-radius: 5%;
+}
+#returnDateDiv{
+  margin-left: 0.5%;
+  width: 15%;
+  height: 131px;
+  border-radius: 5%;
+  background-color: #ebf5fb;
+ 
+}
+#matFromDate{
+  width: 100% !important;
+}
+#matReturnDate{
+  width: 100% !important;
+}
+#travellerDiv{
+  padding-top: 0.5%;
+  padding-left: 0.5%;
+  margin-left: 0.5%;
+  width: 15%;
+  height: 131px;
+  border-radius: 5%;
+  background-color: #ebf5fb;
+}
+
+#adultCount{
+  display: flex;
+  
+  
+}
+#adultCountValue{
+  width: 10%;
+   border-radius: 25px;
+   background-color: white;
+}
+#displayTravellerDetails{
+  margin-bottom: 10%;
+  margin-left: 50%;
+  width: 50%;
+  height: 30%;
+
+  background-color: #ebf5fb;
+}
+#specialFareDetails{
+  display: flex;
+}
+#fareDetails{
+  display: flex;
+  width: 130%;
+}
+#studentFare{
+  width: 100%;
+  height: 60px;
+  padding-top: 3%;
+  border-radius: 15px;
+}
+#regularFare{
+  width: 70%;
+  height: 60px;
+  padding-top: 3%;
+  
+  border-radius: 15px;
+}
+
+#specialFareInfo{
+  width: 10%;
+  height: 50px;
+  border-radius: 15px;
+  padding-left: 1%;
+  padding-top: 1%;
+ font-weight: bold;
+  
+}
